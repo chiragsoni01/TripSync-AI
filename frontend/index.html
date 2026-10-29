@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="TripSync AI helps you plan smarter trips with AI-powered recommendations and budget-aware planning."
+    >
+
+    <title>TripSync AI | Your Next Adventure</title>
+
+    <!-- Website styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">✈</span>
+            <span>TripSync <span class="logo-highlight">AI</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#planner">Plan a Trip</a>
+            <a href="#features">Features</a>
+        </nav>
+
+        <a href="#planner" class="nav-button">
+            Start Planning →
+        </a>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ✨ YOUR PERSONAL AI TRAVEL PLANNER
+                </span>
+
+                <h1>
+                    Your next adventure,
+                    <span>intelligently planned.</span>
+                </h1>
+
+                <p>
+                    Discover amazing destinations, explore personalized
+                    recommendations, and plan your journey around your
+                    budget with TripSync AI.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#planner" class="primary-button">
+                        Plan My Trip ↗
+                    </a>
+
+                    <a href="#features" class="secondary-button">
+                        Explore Features
+                    </a>
+                </div>
+
+                <div class="hero-highlights">
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Specialist Agents</span>
+                    </div>
+
+                    <div>
+                        <strong>AI</strong>
+                        <span>Smart Recommendations</span>
+                    </div>
+
+                    <div>
+                        <strong>₹ / $</strong>
+                        <span>Budget-Aware Planning</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="image-label">
+                    <span>🌍</span>
+
+                    <div>
+                        <strong>Your world awaits</strong>
+                        <p>One trip. Endless possibilities.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Destination Section -->
+        <section class="destinations section" id="destinations">
+
+            <div class="section-heading">
+                <span class="eyebrow">FIND YOUR INSPIRATION</span>
+
+                <h2>Where will you go next?</h2>
+
+                <p>
+                    From tropical escapes to unforgettable city adventures,
+                    your next journey starts here.
+                </p>
+            </div>
+
+            <div class="destination-grid">
+
+                <article class="destination-card bali">
+                    <div class="destination-info">
+                        <span>ISLAND ESCAPE</span>
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical beauty and peaceful coastlines.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card switzerland">
+                    <div class="destination-info">
+                        <span>MOUNTAIN ADVENTURE</span>
+                        <h3>Swiss Alps</h3>
+                        <p>Mountain views and unforgettable scenery.</p>
+                    </div>
+                </article>
+
+                <article class="destination-card tokyo">
+                    <div class="destination-info">
+                        <span>CITY EXPLORATION</span>
+                        <h3>Tokyo, Japan</h3>
+                        <p>Discover culture, food, and modern life.</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Trip Planner Section -->
+        <section class="planner-section section" id="planner">
+
+            <div class="section-heading">
+                <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+                <h2>Let's plan your next adventure.</h2>
+
+                <p>
+                    Tell us a little about your trip.
+                    Our AI specialists will help with the planning.
+                </p>
+            </div>
+
+            <form id="trip-form" class="trip-form">
+
+                <!-- Starting City -->
+                <div class="form-group">
+                    <label for="origin">Starting City</label>
+
+                    <input
+                        type="text"
+                        id="origin"
+                        name="origin"
+                        placeholder="e.g. Delhi"
+                    >
+                </div>
+
+                <!-- Destination -->
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        name="destination"
+                        placeholder="e.g. Bali, Indonesia"
+                        required
+                    >
+                </div>
+
+                <!-- Departure Date -->
+                <div class="form-group">
+                    <label for="start-date">Departure Date</label>
+
+                    <input
+                        type="date"
+                        id="start-date"
+                        name="start_date"
+                        required
+                    >
+                </div>
+
+                <!-- Return Date -->
+                <div class="form-group">
+                    <label for="end-date">Return Date</label>
+
+                    <input
+                        type="date"
+                        id="end-date"
+                        name="end_date"
+                        required
+                    >
+                </div>
+
+                <!-- Travelers -->
+                <div class="form-group">
+                    <label for="travelers">Travelers</label>
+
+                    <select id="travelers" name="travelers">
+                        <option value="1">1 traveler</option>
+                        <option value="2">2 travelers</option>
+                        <option value="3">3 travelers</option>
+                        <option value="4">4 travelers</option>
+                        <option value="5">5 travelers</option>
+                        <option value="6">6 travelers</option>
+                    </select>
+                </div>
+
+                <!-- Budget -->
+                <div class="form-group">
+                    <label for="budget">Total Budget (₹)</label>
+
+                    <input
+                        type="number"
+                        id="budget"
+                        name="budget"
+                        placeholder="e.g. 50000"
+                        min="1"
+                        required
+                    >
+                </div>
+
+                <!-- Existing Trip Planning Button -->
+                <button
+                    type="submit"
+                    class="primary-button submit-button"
+                >
+                    Generate My Trip ✈
+                </button>
+
+                <!-- NEW: Compare Strategies Button -->
+                <button
+                    type="button"
+                    id="compare-strategies"
+                    class="secondary-button"
+                >
+                    ⚖️ Compare Travel Strategies
+                </button>
+
+                <!-- Form Status Message -->
+                <p
+                    id="form-message"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features section" id="features">
+
+            <div class="section-heading">
+                <span class="eyebrow">TRAVEL PLANNING, REIMAGINED</span>
+
+                <h2>Four specialists. One smarter journey.</h2>
+
+                <p>
+                    Different travel needs, coordinated through one
+                    intelligent planning experience.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">✈</div>
+
+                    <h3>Transport Specialist</h3>
+
+                    <p>
+                        Explore transport options that suit your
+                        itinerary and budget.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">⌂</div>
+
+                    <h3>Stay Specialist</h3>
+
+                    <p>
+                        Discover accommodation suggestions for
+                        your destination and travel needs.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">◎</div>
+
+                    <h3>Activities Specialist</h3>
+
+                    <p>
+                        Find attractions and experiences
+                        suited to your interests.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">♨</div>
+
+                    <h3>Food Specialist</h3>
+
+                    <p>
+                        Explore local food ideas and memorable
+                        dining experiences.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">✈</span>
+            <span>TripSync <span class="logo-highlight">AI</span></span>
+        </a>
+
+        <p>
+            Plan smarter. Travel better.
+            Your next adventure starts with TripSync AI.
+        </p>
+
+        <span class="footer-note">
+            A student-built AI travel planning project.
+        </span>
+
+    </footer>
+
+
+    <!-- Chart.js: Budget Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- jsPDF: Export Trip Plans as PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- TripSync AI Frontend Logic -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "5f158cd8-d512-48df-8710-4285a2e15a84",
+    "name": "Delhi to Goa",
+    "saved_at": "2026-10-16T17:56:36",
+    "plan": {
+      "origin": "Delhi",
+      "destination": "Goa",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-18",
+      "travelers": 3,
+      "days": 4,
+      "nights": 3,
+      "reports": [
+        {
+          "agent": "Transport Agent",
+          "origin": "Delhi",
+          "destination": "Goa",
+          "recommendation": "Prioritize lower-cost train or bus options from Delhi to Goa.",
+          "estimated_cost": 9000,
+          "cost_type": "Illustrative economical transport estimate",
+          "alternative": {
+            "recommendation": "Prioritize lower-cost train or bus options from Delhi to Goa.",
+            "estimated_cost": 9000,
+            "cost_type": "Illustrative economical transport estimate"
+          },
+          "alternative_used": true,
+          "ai_recommendation": "Prioritize train travel over flights to secure lower fares, and consider renting a single scooter or using local buses for commuting within Goa to keep internal travel costs minimal.",
+          "ai_status": "Gemini AI"
+        },
+        {
+          "agent": "Stay Agent",
+          "rooms": 2,
+          "nights": 3,
+          "recommendation": "Prioritize budget stays for 2 room(s) over 3 night(s).",
+          "estimated_cost": 12000,
+          "cost_type": "Illustrative budget-stay estimate",
+          "alternative": {
+            "recommendation": "Prioritize budget stays for 2 room(s) over 3 night(s).",
+            "estimated_cost": 12000,
+            "cost_type": "Illustrative budget-stay estimate"
+          },
+          "alternative_used": true,
+          "ai_recommendation": "With a total budget constraint, opt for highly-rated hostels or budget guesthouses in North Goa rather than full-service resorts to manage accommodation expenses effectively.",
+          "ai_status": "Gemini AI"
+        },
+        {
+          "agent": "Activities Agent",
+          "recommendation": "Prioritize free attractions, public beaches and lower-cost activities in Goa.",
+          "estimated_cost": 7200,
+          "cost_type": "Illustrative economical activity estimate",
+          "alternative": {
+            "recommendation": "Prioritize free attractions, public beaches and lower-cost activities in Goa.",
+            "estimated_cost": 7200,
+            "cost_type": "Illustrative economical activity estimate"
+          },
+          "alternative_used": true,
+          "ai_recommendation": "Focus on free or low-cost activities like visiting public beaches, exploring old churches, and hiking to viewpoints rather than expensive water sports or guided tours.",
+          "ai_status": "Gemini AI"
+        },
+        {
+          "agent": "Food Agent",
+          "recommendation": "Prioritize affordable local eateries and economical meal options.",
+          "estimated_cost": 7200,
+          "cost_type": "Illustrative economical food estimate",
+          "alternative": {
+            "recommendation": "Prioritize affordable local eateries and economical meal options.",
+            "estimated_cost": 7200,
+            "cost_type": "Illustrative economical food estimate"
+          },
+          "alternative_used": true,
+          "ai_recommendation": "Dine at local 'thali' joints and beach shacks serving regional cuisine to save money; limit consumption at high-end restaurants to ensure food costs remain within the suggested allocation.",
+          "ai_status": "Gemini AI"
+        }
+      ],
+      "initial_total": 45000,
+      "replanning_rounds": 4,
+      "ai_enabled_count": 4,
+      "activity_log": [
+        "Orchestrator collected reports from 4 specialist agents.",
+        "Shared Gemini recommendations available for 4 of 4 agents.",
+        "Budget Agent calculated the initial total: ₹45,000.",
+        "Orchestrator selected a cheaper option from Stay Agent: ₹15,000 → ₹12,000 (saved ₹3,000).",
+        "Budget Agent rechecked the plan: ₹42,000 total.",
+        "Orchestrator selected a cheaper option from Transport Agent: ₹12,000 → ₹9,000 (saved ₹3,000).",
+        "Budget Agent rechecked the plan: ₹39,000 total.",
+        "Orchestrator selected a cheaper option from Activities Agent: ₹9,600 → ₹7,200 (saved ₹2,400).",
+        "Budget Agent rechecked the plan: ₹36,600 total.",
+        "Orchestrator selected a cheaper option from Food Agent: ₹8,400 → ₹7,200 (saved ₹1,200).",
+        "Budget Agent rechecked the plan: ₹35,400 total.",
+        "Replanning finished, but available alternatives could not meet the budget target."
+      ],
+      "budget_report": {
+        "agent": "Budget Agent",
+        "budget": 25000,
+        "estimated_total": 35400,
+        "remaining": -10400,
+        "within_budget": false,
+        "status": "Over budget",
+        "message": "The plan exceeds the budget by ₹10,400."
+      }
+    }
+  }
+]
